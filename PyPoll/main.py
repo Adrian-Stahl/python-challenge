@@ -46,7 +46,15 @@ print(count)  # test and checkpoint
 for alpha in range(count - 1):
     if candidate[alpha + 1] != candidate[alpha] and candidate[alpha + 1] not in name:
         name.append(candidate[alpha + 1])
-candidateVotes = len(name)
+amountofCandidates = len(name)
 
 #print test and checkpoint
-print(candidateVotes)#only three candidates in this whole list! good job for today.
+#print(amountofCandidates) only three candidates in this whole list! good job for today.
+
+for beta in range(amountofCandidates):
+    candidatepercent.append(candidate.count(name[beta]))
+
+    print(candidatepercent)
+cons = count
+
+for gamma
