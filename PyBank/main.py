@@ -28,7 +28,7 @@ with open('/Users/castahl/Desktop/UTSA/Bootcamp/Challenges/python challenge /pyt
 
     mb = 0
 
-    # this is how we let pythons know in which column are the date and earnings
+    # this is how we let python know in which column are the date and earnings
     for row in csvreader:
         monthyear = row[0]
         earnings = row[1]
