@@ -37,12 +37,12 @@ with open(
 
 # first task is total number of votes cast
 count = len(ballotid)
-print(count)  # test and checkpoint
+#print(count)  # test and checkpoint
 # so we first need to create a list of different candidates: they will have to go through
 # candidates and placed them on their own list if they are different.
 
 # go through candidate, if different, append to another list called "name"
-
+#-----
 for alpha in range(count - 1):
     if candidate[alpha + 1] != candidate[alpha] and candidate[alpha + 1] not in name:
         name.append(candidate[alpha + 1])
@@ -50,11 +50,14 @@ amountofCandidates = len(name)
 
 #print test and checkpoint
 #print(amountofCandidates) only three candidates in this whole list! good job for today.
-
+#------
 for beta in range(amountofCandidates):
-    candidatepercent.append(candidate.count(name[beta]))
+    candidatetotal.append(candidate.count(name[beta]))
 
-    print(candidatepercent)
-cons = count
+#------
+#this is where we obtain the percentage
 
-for gamma
+for gamma in range(amountofCandidates):
+    candidatepercent.append(f'{round((candidatetotal[gamma]/count*100),3)}%')
+
+    print(candidatetotal)
