@@ -56,7 +56,7 @@ with open('/Users/castahl/Desktop/UTSA/Bootcamp/Challenges/python challenge /pyt
 
     for y in range (ma):
         total = total + int(profitloss[y])
-Finalwork=f'\
+finalWork=f'\
     Financial Analysis\n\
     ----------------------------\n\
     Total Months:{ma}\n\
@@ -64,8 +64,8 @@ Finalwork=f'\
     Average Change: $ {round(average/(ma - 1),2)}\n\
     Greatest Increase in Profits:{date[diferenciaa+1]} ${int(differentiaa)}\n\
     Greatest Decrease in Profits: {date[diferenciab + 1]} ${int(differentiab)}\n'
-print(Finalwork)
+print(finalWork)
 
 pybank = open("pybank.txt", 'w')
-pybank.writelines(Finalwork)
+pybank.writelines(finalWork)
 pybank.close()
