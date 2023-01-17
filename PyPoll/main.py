@@ -14,11 +14,11 @@ with open(
     name = []
     candidatetotal = []
     candidatepercent = []
-    # list to display percentage of candidates orderly
+    # dictionary to format finalWork
     pi = []
-
-    # complete variables according to tasks
     count = 0
+
+
 
 
 
